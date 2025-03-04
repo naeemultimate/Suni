@@ -925,49 +925,63 @@ article {
 }
 
 /* FLASHCARDS CSS */
+/* Flashcard Section */
 #osce-flashcards {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px 30px;
-  background: rgba(255, 255, 255, 0.9); /* Soft white background */
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
+/* Flashcard Container */
+#flashcard-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Individual Flashcards */
 .flashcard {
   background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  border-left: 5px solid #F26B38; /* Adds a slight accent to flashcard */
+  border-left: 5px solid #F26B38;
   text-align: left;
+  display: none;
 }
 
-.flashcard h2 {
-  color: #333;
-  font-size: 22px;
+.flashcard.active {
+  display: block;
 }
 
-.flashcard h3 {
-  color: #F26B38;
-  font-size: 18px;
-  margin-top: 15px;
+/* Navigation Controls */
+#navigation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.flashcard ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.flashcard ul li {
-  background: #ffffff;
-  margin: 5px 0;
-  padding: 8px;
+button {
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.flashcard p {
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#page-indicator {
   font-size: 16px;
-  color: #444;
 }

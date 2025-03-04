@@ -42,3 +42,39 @@ document.addEventListener("DOMContentLoaded", function () {
       volumeBtn.innerHTML = isMuted ? "🔇 <span class='volume-text'>dhur</span>" : "🔊 <span class='volume-text'>dhur</span>";
   });
 });
+
+
+// Flashcard Navigation Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const flashcards = document.querySelectorAll('.flashcard');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const pageIndicator = document.getElementById('page-indicator');
+  let currentIndex = 0;
+
+  function updateFlashcards() {
+      flashcards.forEach((card, index) => {
+          card.classList.toggle('active', index === currentIndex);
+      });
+      pageIndicator.textContent = `${currentIndex + 1} / ${flashcards.length}`;
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === flashcards.length - 1;
+  }
+
+  prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+          currentIndex--;
+          updateFlashcards();
+      }
+  });
+
+  nextBtn.addEventListener('click', () => {
+      if (currentIndex < flashcards.length - 1) {
+          currentIndex++;
+          updateFlashcards();
+      }
+  });
+
+  // Initialize the first flashcard
+  updateFlashcards();
+});

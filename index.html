@@ -193,58 +193,97 @@
 <!-- END OF OSCE -->
 
 <!-- START OF OSCE FLASHCARD SECTION -->
+<!-- START OF OSCE FLASHCARD SECTION -->
 <section id="osce-flashcards">
   <h1 class="title">OSCE Flashcards</h1>
   <p>Quick-reference flashcards for important OSCE skills.</p>
 
-  <div class="flashcard">
-    <h2>Peak Expiratory Flow Rate (PEFR) Measurement</h2>
-    <p><strong>Definition:</strong> PEFR is a measure of how fast a person can exhale, indicating airway obstruction.</p>
+  <div id="flashcard-container">
+    <!-- Flashcard 1: PEFR Measurement -->
+    <div class="flashcard active">
+      <h2>Peak Expiratory Flow Rate (PEFR) Measurement</h2>
+      <p><strong>Definition:</strong> A measure of how fast a person can exhale, indicating airway obstruction.</p>
 
-    <h3>Indications</h3>
-    <ul>
-      <li>Asthma monitoring</li>
-      <li>Assessing airway obstruction</li>
-      <li>Evaluating treatment response</li>
-    </ul>
+      <h3>Key Steps:</h3>
+      <ul>
+        <li>Ensure patient is upright & relaxed</li>
+        <li>Attach disposable mouthpiece</li>
+        <li>Take a deep breath in</li>
+        <li>Blow out as hard & fast as possible</li>
+        <li>Record highest of three readings</li>
+        <li>Compare to personal best or predicted values</li>
+      </ul>
 
-    <h3>Procedure</h3>
-    <p><strong>Prepare:</strong></p>
-    <ul>
-      <li>Ensure patient is upright & relaxed</li>
-      <li>Attach disposable mouthpiece</li>
-    </ul>
+      <h3>Errors to Avoid:</h3>
+      <ul>
+        <li>❌ Poor effort/incomplete breath</li>
+        <li>❌ Tongue blocking mouthpiece</li>
+        <li>❌ Coughing during test</li>
+      </ul>
 
-    <p><strong>Instruct:</strong></p>
-    <ul>
-      <li>Take a deep breath in</li>
-      <li>Place lips tightly around mouthpiece</li>
-      <li>Blow out as hard & fast as possible</li>
-    </ul>
+      <h3>Management:</h3>
+      <p>If PEFR is low → Adjust medication or seek medical review</p>
+    </div>
 
-    <p><strong>Measure:</strong></p>
-    <ul>
-      <li>Record reading (L/min)</li>
-      <li>Repeat 3 times, noting the highest value</li>
-    </ul>
+    <!-- Flashcard 2: Knee Examination -->
+    <div class="flashcard">
+      <h2>Knee Examination (MSK)</h2>
+      <p><strong>Definition:</strong> A systematic approach to examining the knee joint for pathology.</p>
 
-    <p><strong>Interpret:</strong></p>
-    <ul>
-      <li>Compare to personal best or predicted values</li>
-      <li>Values <80% of best may indicate worsening asthma</li>
-    </ul>
+      <h3>Key Steps:</h3>
+      <ul>
+        <li>Introduce yourself & confirm patient details</li>
+        <li>Expose both legs & position the patient comfortably</li>
+        <li>Inspect for swelling, deformity, scars, or muscle wasting</li>
+        <li>Palpate joint line, patella, & popliteal fossa for tenderness</li>
+        <li>Assess range of motion (flexion, extension)</li>
+        <li>Special tests: Lachman’s (ACL), McMurray’s (meniscus), Valgus/Varus stress (MCL/LCL)</li>
+      </ul>
 
-    <h3>Errors to Avoid</h3>
-    <ul>
-      <li>❌ Poor effort/incomplete breath</li>
-      <li>❌ Tongue blocking mouthpiece</li>
-      <li>❌ Coughing during test</li>
-    </ul>
+      <h3>Key Findings:</h3>
+      <ul>
+        <li>Joint effusion → Consider arthritis, trauma</li>
+        <li>Positive McMurray’s → Meniscal tear</li>
+        <li>Anterior translation on Lachman’s → ACL rupture</li>
+      </ul>
+    </div>
 
-    <h3>Management</h3>
-    <p>If low PEFR → Adjust medication or seek medical review</p>
+    <!-- Flashcard 3: Cranial Nerve Examination -->
+    <div class="flashcard">
+      <h2>Cranial Nerve Examination</h2>
+      <p><strong>Definition:</strong> A neurological assessment of the 12 cranial nerves.</p>
+
+      <h3>Key Steps:</h3>
+      <ul>
+        <li>Olfactory (I): Smell test</li>
+        <li>Optic (II): Visual acuity, fields, & pupillary reflex</li>
+        <li>Oculomotor, Trochlear, Abducens (III, IV, VI): Eye movements</li>
+        <li>Trigeminal (V): Facial sensation & jaw movements</li>
+        <li>Facial (VII): Facial expression & taste</li>
+        <li>Vestibulocochlear (VIII): Hearing & balance</li>
+        <li>Glossopharyngeal, Vagus (IX, X): Gag reflex, voice changes</li>
+        <li>Accessory (XI): Shoulder shrug</li>
+        <li>Hypoglossal (XII): Tongue movement</li>
+      </ul>
+
+      <h3>Key Findings:</h3>
+      <ul>
+        <li>Ptosis & pupil dilation → CN III palsy</li>
+        <li>Unilateral hearing loss → CN VIII dysfunction</li>
+        <li>Deviation of tongue → CN XII lesion</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="navigation-controls">
+    <button id="prev-btn">← Back</button>
+    <span id="page-indicator">1 / 3</span>
+    <button id="next-btn">Next →</button>
   </div>
 </section>
+<!-- END OF OSCE FLASHCARD SECTION -->
+
+
 <!-- END OF OSCE FLASHCARD SECTION -->
 <script  src="js/index.js"></script>
 </body>
