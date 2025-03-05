@@ -36,6 +36,7 @@ h1 {
     gap: 20px;
     max-width: 1000px;
     margin: auto;
+    padding: 0 20px; /* Adds space to the left and right */
 }
 
 /* Individual Flashcard Styling */
@@ -47,13 +48,17 @@ h1 {
     text-align: left;
 }
 
+/* Ensures the text isn't too close to the edges */
 .flashcard h2 {
     color: #F26B38;
+    margin-left: 10px;
 }
 
 .flashcard ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .flashcard ul li {
@@ -62,4 +67,17 @@ h1 {
     padding: 8px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fixes the right-side cutoff issue on smaller screens */
+@media screen and (max-width: 600px) {
+    .flashcard-grid {
+        padding: 0 25px; /* Ensures space on both sides for mobile */
+    }
+
+    .flashcard {
+        padding: 20px;
+        margin: 0 auto; /* Centers flashcards properly */
+        width: 90%; /* Ensures flashcards don't extend to screen edge */
+    }
 }
